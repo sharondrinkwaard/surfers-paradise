@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['surfers-paradise', 'localhost']
+ALLOWED_HOSTS = ['surfers-paradise.herokuapp.com', 'localhost']
 
 
 # Application definition
