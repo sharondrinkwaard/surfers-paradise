@@ -40,5 +40,3 @@ class Booking(models.Model):
     def __str__(self):
         return f'Name: {self.first_name, self.last_name} | Date: {self.date} | Time {self.time} | Notes: {self.notes}'
 
-
-
