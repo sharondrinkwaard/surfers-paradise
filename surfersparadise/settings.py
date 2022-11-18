@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
     'django_summernote',
     'surfclub',
 ]

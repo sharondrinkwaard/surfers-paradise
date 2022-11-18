@@ -15,6 +15,12 @@
     width: 100vw;
     background-size: cover;
 }
+.header-image-booking {
+    background: url("/static/images/booking-header.png") no-repeat center center;
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+}
 .header-text {
     display: flex;
     flex-direction: column;
