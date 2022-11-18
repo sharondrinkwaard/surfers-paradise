@@ -1,4 +1,11 @@
 
+* {
+    margin: auto;
+}
+.body {
+    display: flex;
+
+}
 
 
 /* ------------------------------------- HEADER */
@@ -9,10 +16,15 @@
     background-size: cover;
 }
 .header-text {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/* ------------------------------------- CONTENT */
+.custom {
+    margin: 15px;
 }
 
 /* ------------------------------------- FOOTER */
