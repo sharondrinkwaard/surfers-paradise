@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from .models import Booking, BookingCustomer
-from .forms import BookingCustomerForm
+from .forms import BookingForm
 
 
 class BookingList(generic.ListView):
@@ -13,13 +13,13 @@ class BookingPage(View):
 
     def get(self, request):
         template_name = 'booking.html'
-        form = BookingCustomerForm()
+        form = BookingForm()
         context = {'form': form}
 
         return render(request, template_name, context)
 
     def post(self, request):
-        form = BookingCustomerForm(request.POST)
+        form = BookingForm(request.POST)
         if form.is_valid():
             form.save(commit=False)
             form.posted_by = request.user
