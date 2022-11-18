@@ -6,3 +6,7 @@ from .models import Booking
 class BookingList(generic.ListView):
     model = Booking
     template_name = 'index.html'
+
+
+def booking_page(request):
+    return render(request, 'booking.html')
