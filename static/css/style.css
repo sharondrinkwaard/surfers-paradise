@@ -4,20 +4,31 @@
 }
 .body {
     display: flex;
-
 }
 
 
 /* ------------------------------------- HEADER */
-.header-image {
-    background: url("/static/images/header-image.png") no-repeat center center;
-    height: 50vh;
+.index-header {
+    background: url("/static/images/header-image.png") no-repeat center center; 
+    height: 40vh;
+    width: 100vw;
+    background-size: cover; 
+}
+.booking-header {
+    background: url("/static/images/booking-header.png") no-repeat center center;
+    height: 40vh;
     width: 100vw;
     background-size: cover;
 }
-.header-image-booking {
-    background: url("/static/images/booking-header.png") no-repeat center center;
-    height: 50vh;
+.login-header {
+    background: url("/static/images/header-login.png") no-repeat center center;
+    height: 40vh;
+    width: 100vw;
+    background-size: cover;
+}
+.signout-header {
+    background: url("/static/images/header-logout.png") no-repeat center center;
+    height: 40vh;
     width: 100vw;
     background-size: cover;
 }
