@@ -1,0 +1,32 @@
+
+
+
+/* ------------------------------------- HEADER */
+.header-image {
+    background: url("/static/images/header-image.png") no-repeat center center;
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+}
+.header-text {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------------------------------- FOOTER */
+footer {
+    background-color: #525252;
+    width: 100vw;
+    color: #fafafa;
+    min-height: 30px;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
