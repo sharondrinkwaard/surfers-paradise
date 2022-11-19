@@ -24,4 +24,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('home/', include('surfclub.urls')),
     path('overview/', include('surfclub.urls'), name='surfclub_urls'),
+    path('edit/<data_id>', include('surfclub.urls'))
 ]

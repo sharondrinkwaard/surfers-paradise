@@ -19,6 +19,8 @@
             <div class="col-md-8 mt-4 mb-4">
                 <p>Lesson: {{ data.options }}</p>
                 <p>Day: {{ data.date }} | Time: {{ data.time }}</p>
+                <a href="/edit/{{ data.id }}" class="btn btn-primary btn-sm">Edit</a>
+                <a href="/delete/{{ data.id }}" class="btn btn-primary btn-sm">Delete</a>
                 <hr>
             </div>
             {% endfor %}

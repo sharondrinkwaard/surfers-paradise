@@ -24,6 +24,10 @@ def get_data(request):
     return render(request, 'overview.html', context)
 
 
+def edit_data(request, data_id):
+    return render(request, 'edit_data.html')
+
+
 class BookingPage(View):
 
     def get(self, request):
@@ -59,24 +63,27 @@ class OverviewBookings(View):
         return render(request, 'overview.html')
 
 
-class SubmitForm(View):
 
-    def submit(self, request, *args, **kwargs):
-        queryset = BookingCustomer.objects
-        submit = get_object_or_404(queryset)
-        submit_form = SubmitForm(data=request.POST)
-        if submit_form.is_valid():
-            submit_form.instance.first_name = request.user.first_name
-            submit_form.instance.last_name = request.user.last_name
-            submit_form.instance.email = request.user.email
-            submit_form.instance.date = request.user.date
-            submit_form.instance.time = request.user.time
-            submit_form.instance.options = request.user.options
-            submit_form.instance.notes = request.user.notes
-            customer_booking = submit_form.save(commit=False)
-            customer_booking.post = submit
-            customer_booking.save()
-        else: 
-            submit_form = SubmitForm()
 
-        return render(request, 'booking.html')
+
+# class SubmitForm(View):
+
+#     def submit(self, request, *args, **kwargs):
+#         queryset = BookingCustomer.objects
+#         submit = get_object_or_404(queryset)
+#         submit_form = SubmitForm(data=request.POST)
+#         if submit_form.is_valid():
+#             submit_form.instance.first_name = request.user.first_name
+#             submit_form.instance.last_name = request.user.last_name
+#             submit_form.instance.email = request.user.email
+#             submit_form.instance.date = request.user.date
+#             submit_form.instance.time = request.user.time
+#             submit_form.instance.options = request.user.options
+#             submit_form.instance.notes = request.user.notes
+#             customer_booking = submit_form.save(commit=False)
+#             customer_booking.post = submit
+#             customer_booking.save()
+#         else: 
+#             submit_form = SubmitForm()
+
+#         return render(request, 'booking.html')
