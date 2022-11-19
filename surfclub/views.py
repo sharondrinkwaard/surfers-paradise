@@ -9,6 +9,21 @@ class BookingList(generic.ListView):
     template_name = 'index.html'
 
 
+# class GetData(generic.ListView):
+#     model = Booking
+#     queryset = Booking.objects.order_by('-created_on')
+#     template_name = 'overview.html'
+
+
+def get_data(request):
+    current_user = request.user
+    queryset = Booking.objects.filter(posted_by=current_user)
+    fname = request.user.first_name
+    context = {'queryset': queryset, 'fname': fname}
+
+    return render(request, 'overview.html', context)
+
+
 class BookingPage(View):
 
     def get(self, request):

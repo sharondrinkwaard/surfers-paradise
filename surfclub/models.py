@@ -38,7 +38,7 @@ class Booking(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f'Name: {self.first_name, self.last_name} | Date: {self.date} | Time {self.time} | Notes: {self.notes}'
+        return f'Name: {self.first_name, self.last_name} | Email: {self.email} | Date: {self.date} | Time {self.time} | Notes: {self.notes}'
 
 
 class BookingCustomer(models.Model):

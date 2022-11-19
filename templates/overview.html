@@ -5,15 +5,23 @@
 <header>
     <div class="booking-header">
         <div class="header-text">
-            <h1 class="mt-5">Your Overview</h1>
+            <h1 class="mt-5">Your Booking Overview</h1>
         </div>
     </div>
 </header>
 
 <section>
     <div class="container">
-        <div class="row">
-            
+        <div class="col-md-8 float-right mt-4 mb-4">
+            <h2>Hi {{ request.user.username }}!</h2>
+            <p>See your booking information down below:</p>
+            {% for data in queryset %}
+            <div class="col-md-8 mt-4 mb-4">
+                <p>Lesson: {{ data.options }}</p>
+                <p>Day: {{ data.date }} | Time: {{ data.time }}</p>
+                <hr>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
