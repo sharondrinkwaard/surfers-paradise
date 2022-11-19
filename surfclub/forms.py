@@ -11,4 +11,5 @@ from .models import BookingCustomer, Booking
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        exclude = ('posted_by', 'approved')
+        fields = '__all__'
+        # exclude = ('posted_by', 'approved')

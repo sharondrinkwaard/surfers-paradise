@@ -27,6 +27,23 @@ class BookingPage(View):
             return redirect('booking')
 
 
+class OverviewBookings(View):
+
+    def get(self, request):
+        queryset = Booking.objects
+        # booking = get_object_or_404(queryset)
+        booking_overview = OverviewBookings(data=request.GET)
+        # booking_overview.instance.first_name = request.user.first_name
+        # booking_overview.instance.last_name = request.user.last_name
+        # booking_overview.instance.email = request.user.email
+        # booking_overview.instance.date = request.user.date
+        # booking_overview.instance.time = request.user.time
+        # booking_overview.instance.options = request.user.options
+        # booking_overview.instance.notes = request.user.notes
+
+        return render(request, 'overview')
+
+
 class SubmitForm(View):
 
     def submit(self, request, *args, **kwargs):

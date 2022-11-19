@@ -22,4 +22,6 @@ urlpatterns = [
     path('', include('surfclub.urls'), name='surfclub_urls'),
     path('booking/', include('surfclub.urls')),
     path('accounts/', include('allauth.urls')),
+    path('home/', include('surfclub.urls')),
+    path('overview/', include('surfclub.urls'), name='surfclub_urls'),
 ]
