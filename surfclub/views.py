@@ -41,7 +41,7 @@ class OverviewBookings(View):
         # booking_overview.instance.options = request.user.options
         # booking_overview.instance.notes = request.user.notes
 
-        return render(request, 'overview')
+        return render(request, 'overview.html')
 
 
 class SubmitForm(View):
