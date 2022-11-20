@@ -20,10 +20,18 @@
                 <p>Lesson: {{ data.options }}</p>
                 <p>Day: {{ data.date }} | Time: {{ data.time }}</p>
                 <a href="/edit/{{ data.id }}" class="btn btn-primary btn-sm">Edit</a>
-                <a href="/delete/{{ data.id }}" class="btn btn-primary btn-sm">Delete</a>
+                <a href="/delete/{{ data.id }}" class="btn btn-primary btn-sm" onclick="return confirm('Are you sure you want to delete this booking?')">Delete</a>
                 <hr>
             </div>
             {% endfor %}
+            <!-- {% if deleting %}
+            <form method="POST">
+                {% csrf_token %}
+                Are you sure you want to delete this booking?
+                <button type="submit" class="btn btn-primary btn-sm">Delete</button>
+                <a href="{% url 'overview' %}">Cancel </a>
+            </form>
+            {% endif %} -->
         </div>
     </div>
 </section>

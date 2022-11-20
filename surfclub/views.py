@@ -18,8 +18,7 @@ class BookingList(generic.ListView):
 def get_data(request):
     current_user = request.user
     queryset = Booking.objects.filter(posted_by=current_user)
-    fname = request.user.first_name
-    context = {'queryset': queryset, 'fname': fname}
+    context = {'queryset': queryset}
 
     return render(request, 'overview.html', context)
 
