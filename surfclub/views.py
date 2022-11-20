@@ -25,9 +25,26 @@ def get_data(request):
 
 
 def edit_data(request, data_id):
-    return render(request, 'edit_data.html')
+    data = get_object_or_404(Booking, id=data_id)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=data)
+        if form.is_valid():
+            form.save(commit=False)
+            form.posted_by = request.user
+            form.save()
+            return redirect('overview')
+    form = BookingForm(instance=data)
+    context = {'form': form}
+    return render(request, 'edit_data.html', context)
 
 
+def delete_data(request, data_id):
+    data = get_object_or_404(Booking, id=data_id)
+    data.delete()
+    return redirect('overview')
+
+
+# Class to make bookings
 class BookingPage(View):
 
     def get(self, request):
@@ -61,9 +78,6 @@ class OverviewBookings(View):
         # booking_overview.instance.notes = request.user.notes
 
         return render(request, 'overview.html')
-
-
-
 
 
 # class SubmitForm(View):
