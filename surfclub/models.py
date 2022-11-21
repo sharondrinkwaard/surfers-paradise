@@ -33,29 +33,9 @@ class Booking(models.Model):
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default='10:00')
     notes = models.TextField(blank=True)
     approved = models.BooleanField(default=False)
-    # booking_nr = models.ForeignKey(User, on_delete=models.CASCADE, related_name='')
 
     class Meta:
         ordering = ['-created_on']
 
     def __str__(self):
         return f'Name: {self.first_name, self.last_name} | Email: {self.email} | Date: {self.date} | Time {self.time} | Notes: {self.notes}'
-
-
-# # Booking form for the user
-# class BookingCustomer(models.Model):
-#     posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
-#     first_name = models.CharField(max_length=80)
-#     last_name = models.CharField(max_length=80)
-#     email = models.EmailField()
-#     date = models.DateField(default=datetime.now)
-#     time = models.CharField(max_length=10, choices=TIME_CHOICES, default='10:00')
-#     options = models.CharField(max_length=80, choices=ALL_CHOICES, default='Beginner Surf Lesson')
-#     notes = models.TextField(blank=True)
-#     approved = models.BooleanField(default=False)
-
-#     class Meta:
-#         ordering = ['last_name']
-
-#     def __str__(self):
-#         return f'Name: {self.first_name, self.last_name} | Date: {self.date} | Time {self.time} | Notes: {self.notes} | Option: {self.options}'

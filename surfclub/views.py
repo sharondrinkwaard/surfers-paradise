@@ -58,7 +58,7 @@ class BookingPage(View):
             booking.save()
             return redirect('overview')
         else:
-            render(request.POST, form.errors)
+            render(request, 'booking.html', {'form': form})
 
 # class OverviewBookings(View):
 
