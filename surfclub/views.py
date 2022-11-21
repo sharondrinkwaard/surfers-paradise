@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
-from .models import Booking, BookingCustomer
+from .models import Booking
 from .forms import BookingForm
 
 
@@ -53,12 +53,12 @@ class BookingPage(View):
     def post(self, request):
         form = BookingForm(request.POST)
         if form.is_valid():
-            form.save(commit=False)
-            form.posted_by = request.user
-            form.save()
-            # return redirect('booking')
-            return render(request, 'booking', {'posted': True})
-
+            booking = form.save(commit=False)
+            booking.posted_by = request.user
+            booking.save()
+            return redirect('overview')
+        else:
+            render(request.POST, form.errors)
 
 # class OverviewBookings(View):
 

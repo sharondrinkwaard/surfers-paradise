@@ -1,5 +1,5 @@
 from django import forms
-from .models import BookingCustomer, Booking
+from .models import Booking
 
 
 # class BookingCustomerForm(forms.ModelForm):
@@ -11,5 +11,5 @@ from .models import BookingCustomer, Booking
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = '__all__'
-        # exclude = ('posted_by', 'approved')
+        # fields = '__all__'
+        exclude = ('posted_by', 'approved')
