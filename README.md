@@ -47,8 +47,7 @@ View the live application here- LINK
   - Copyright
   - Social Media links (WORKING ON THIS)
 
-
-### Features Left To Implement
+## Features Left To Implement
 - I would like to finish this readme file
 - I would like to add a contact page with a map incl location
 - I would like to add reviews
@@ -66,6 +65,9 @@ View the live application here- LINK
     - Make more than 6 bookings at the same date and time (max p per lesson is 6)
 - I want to implement this when making a booking:
     - Send an automated email confirmation with the booking details
+
+## Design
+Wireframe
 
 ## Testing
  - validator testing
@@ -95,6 +97,7 @@ View the live application here- LINK
 
 ### Unsolved bugs
 - When deploying to heroku, my css file doesn't load.
+- When deploying to heroku, all my images didn't load. I figure out this was because it is asking for another image.url than given. In Cloudinary the style.css file is up to date, but somehow I cannot manage to deploy this with Heroku. 
 - A user can now still make bookings in the past
 
 
