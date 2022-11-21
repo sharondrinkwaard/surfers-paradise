@@ -9,31 +9,26 @@
 
 /* ------------------------------------- HEADER */
 .index-header {
-    /* background: url("https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066096/static/images/header-index.jpg") no-repeat center center;  */
     height: 40vh;
     width: 100vw;
     background-size: cover; 
 }
 .booking-header {
-    /* background: url("https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066095/static/images/header-booking.jpg") no-repeat center center; */
     height: 40vh;
     width: 100vw;
     background-size: cover;
 }
 .login-header {
-    /* background: url("https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066092/static/images/header-login.jpg") no-repeat center center; */
     height: 40vh;
     width: 100vw;
     background-size: cover;
 }
 .signout-header {
-    /* background: url("https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066097/static/images/header-logout.jpg") no-repeat center center; */
     height: 40vh;
     width: 100vw;
     background-size: cover;
 }
 .register-header {
-    /* background: url("https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066087/static/images/header-register.jpg") no-repeat center center; */
     height: 40vh;
     width: 100vw;
     background-size: cover;
