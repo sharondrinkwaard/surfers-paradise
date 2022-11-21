@@ -77,7 +77,23 @@ View the live application here- LINK
 
 ## Bugs
 ### Solved bugs
+  - When displaying the form on the booking page, the user could choose under which name to make a booking. So the form was displaying all the existing users in a dropdown option. Instead of just the authenticated user.
+  I solved this by 
+  ```
+    current_user = request.user
+    queryset = Booking.objects.filter(posted_by=current_user)
+  ```
+  - When displaying the form, I wanted to hide several model fields from the user. Those fiels were required so had to be filled in. I implemented this code by requesting the 'posted_by' field from the user and save the form afterwards.
+  ```
+   if form.is_valid():
+      booking = form.save(commit=False)
+      booking.posted_by = request.user
+      booking.save()
+      return redirect('overview')
+  ```
+
 ### Unsolved bugs
+- When deploying to heroku, my css file didn't load. 
 
 
 libraries
@@ -90,8 +106,8 @@ deployment
 - [Stackoverflow]
 - [w3schools]
 - [GeeksForGeeks]
-- [Docs Python]
 - [Pexels](https://pexels.com) - for the images 
+- [Flexbox Froggy](https://flexboxfroggy.com/) - to help me postition divs
 
 
  ### Acknowledgments
