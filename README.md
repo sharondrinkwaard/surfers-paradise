@@ -57,6 +57,7 @@ View the live application here- LINK
 - I would like to add blogposts/news
 - I would like to add a calender with all the events going on
 - I would like to implement a django message after the user made, edited or deleted a booking.
+- I would like to finish up the 'Forget password' page
 - On the home page I would like to add pictures of the lessons of choice, and make these into a link, which would direct to a page with the specific information.
 
 - I want to prevent the following things when making a booking:

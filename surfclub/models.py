@@ -20,7 +20,7 @@ TIME_CHOICES = (
 )
 
 
-# Booking form for the admin panel
+# Booking form
 class Booking(models.Model):
     posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
     options = models.CharField(max_length=80, choices=ALL_CHOICES, default='Beginner Surf Lesson')
