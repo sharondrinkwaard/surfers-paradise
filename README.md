@@ -59,6 +59,7 @@ View the live application here- LINK
 - I would like to implement a django message after the user made, edited or deleted a booking.
 - I would like to finish up the 'Forget password' page
 - On the home page I would like to add pictures of the lessons of choice, and make these into a link, which would direct to a page with the specific information.
+- On the overview page, if there are no bookings made yet, I would like to add a message saying "You haven't made a booking yet".
 
 - I want to prevent the following things when making a booking:
     - Make booking in the past

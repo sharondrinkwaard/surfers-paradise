@@ -9,25 +9,25 @@
 
 /* ------------------------------------- HEADER */
 .index-header {
-    background: url("../images/header-image.png") no-repeat center center; 
+    background: url("static/images/header-image.png") no-repeat center center; 
     height: 40vh;
     width: 100vw;
     background-size: cover; 
 }
 .booking-header {
-    background: url("../images/booking-header.png") no-repeat center center;
+    background: url("static/images/booking-header.png") no-repeat center center;
     height: 40vh;
     width: 100vw;
     background-size: cover;
 }
 .login-header {
-    background: url("../images/header-login.png") no-repeat center center;
+    background: url("static/images/header-login.png") no-repeat center center;
     height: 40vh;
     width: 100vw;
     background-size: cover;
 }
 .signout-header {
-    background: url("../images/header-logout.png") no-repeat center center;
+    background: url("static/images/header-logout.png") no-repeat center center;
     height: 40vh;
     width: 100vw;
     background-size: cover;
