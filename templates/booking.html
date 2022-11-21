@@ -18,17 +18,16 @@
                 {% if posted %}
                 <div class="alert alert-success" role="alert">
                     Thank you! Your booking is waiting approval.
+                    We will contact you shortly.
                 </div>
                 {% endif %}
 
-                {% if user.is_authenticated %}
-                <a class="btn btn-primary btn-lg mt-3" href="{% url 'overview' %}">Manage bookings</a>
-                {% endif %}
                 <form class="login" action="" method="post">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <button type="submit" class="btn btn-primary btn-lg">Send</button>
                 </form>
+                
             </div>
         </div>
     </div>

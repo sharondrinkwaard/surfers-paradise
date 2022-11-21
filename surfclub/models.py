@@ -20,6 +20,7 @@ TIME_CHOICES = (
 )
 
 
+# Booking form for the admin panel
 class Booking(models.Model):
     posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
     options = models.CharField(max_length=80, choices=ALL_CHOICES, default='Beginner Surf Lesson')
@@ -41,7 +42,9 @@ class Booking(models.Model):
         return f'Name: {self.first_name, self.last_name} | Email: {self.email} | Date: {self.date} | Time {self.time} | Notes: {self.notes}'
 
 
+# Booking form for the user
 class BookingCustomer(models.Model):
+    posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
     email = models.EmailField()
