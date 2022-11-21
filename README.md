@@ -16,18 +16,18 @@ View the live application here- LINK
 
 ## Features
  #### Navigation
-  - bar
-  - toggler responsive
+  - Navigationbar
+  - Toggler
  #### Header
-  - image
-  - text h1
-  - button
+  - Image on every page
+  - Header text 
+  - Button directing to another page
  #### Info Section
   - On the home page
   - Informs the user about the different lessons available
  #### Booking form
   - Displays the main booking model from models.py  
-  - Several fields are hidden for the user and are (WORKING ON THIS) automatically generated and filled in before saving the form.
+  - Several fields are hidden for the user and are automatically generated and filled in before saving the form.
  #### Bookings overview
   - Displays all bookings made by the authenticated user
   - Bookings from other users are not shown
@@ -93,7 +93,9 @@ View the live application here- LINK
   ```
 
 ### Unsolved bugs
-- When deploying to heroku, my css file didn't load. 
+- When deploying to heroku, my css file doesn't load.
+- A user can now still make bookings in the past
+
 
 
 libraries
