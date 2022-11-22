@@ -1,54 +1,78 @@
   # NOTE: 
 I would like to inform you that this is my 4th portfolio project.
-I havent fully finished this project yet. Unfortunately due to circumstances I am not able to deliver this project, finished, on the scheduled time. I submitted it knowing I wouldnt get a passing grade, and will continue this project whenever I can.
+I havent fully finished this project yet. Unfortunately due to circumstances I am not able to deliver this project, finished, on the scheduled time. I submitted it knowing I would probably not get a passing grade, I will continue this project whenever I can.
 Thank you for understanding!
 
-MOCKUP PICTURE
+HERE COMES A MOCKUP PICTURE
 
 # Introduction
+
 Surfers Paradise, a surfschool located in Queensland, Australia. A warm climate, beautiful nature and the best waves.
 
 My goal for this project is to make it very easy for all users and visitors to make a booking for a surf lesson of choice. Being able to keep track of all bookings when logged in, update them if needed, or even to delete a booking.
+
 Also that all necessary information is provided, like all contact information, what is included in a lesson and what times the lessons are everyday.
 
-View my repository here - LINK
-View the live application here- LINK
+
+
+
+View my repository [here](https://github.com/sharondrinkwaard/surfers-paradise)
+
+View the live application [here](https://surfers-paradise.herokuapp.com/)
 
 ## Features
- #### Navigation
+---
+ ### Navigation
+
   - Navigationbar
   - Toggler
- #### Header
+
+ ### Header
+
   - Image on every page
   - Header text 
   - Button directing to another page
- #### Info Section
+
+ ### Info Section
+
   - On the home page
   - Informs the user about the different lessons available
- #### Booking form
+
+ ### Booking form
+
   - Displays the main booking model from models.py  
   - Several fields are hidden for the user and are automatically generated and filled in before saving the form.
- #### Bookings overview
+
+ ### Bookings overview
+
   - Displays all bookings made by the authenticated user
   - Bookings from other users are not shown
   - Option to edit the booking
   - Option to delte the booking
   - Before deletion, an alert pops up which requires input from the user, to confirm deletion of the selected booking.
   - Button to create another booking, which directs to the Booking form 
- #### Register
+
+ ### Register
+
   - Allows the user to create an account
   - Account keeps track of all bookings
- #### Login
+
+ ### Login
+
   - Gives the user the opportunity to log in
- #### Logout
+
+ ### Logout
+
   - Gives the user the opportunity to log out
   - Asks for confirmation before logging out
- #### Footer
+
+ ### Footer
+
   - Copyright
-  - Social Media links (WORKING ON THIS)
 
 ## Features Left To Implement
-- I would like to finish this readme file
+---
+
 - I would like to add a contact page with a map incl location
 - I would like to add reviews
 - I would like to add more images
@@ -67,9 +91,29 @@ View the live application here- LINK
     - Send an automated email confirmation with the booking details
 
 ## Design
-Wireframe
+---
+
+For the visual view of the web application, I used [WireFrame](https://mockflow.com) from Mockflow
+
+![Wireframe1](/static/images/wireframe-1.png)
+![Wireframe2](/static/images/wireframe-2.png)
+![Wireframe3](/static/images/wireframe-3.png)
+![Wireframe4](/static/images/wireframe-4.png)
+
+
+## Planning
+---
+For planning this project I used a kanban board with user stories. Those are labeled with Must, Could or Should have. So it was easy to have an overview and keep track of how far the development was going.
+
+![Kanban Board](/static/images/kanban-board.png)
+
+When starting to set up the models.py, I created an Entity Relationship Diagram in Word.
+
+![Entity Relationship Diagram](/static/images/ERD.png)
 
 ## Testing
+---
+
  - validator testing
     - html
     - js
@@ -79,7 +123,10 @@ Wireframe
   - lighthouse screenshot
 
 ## Bugs
+---
+
 ### Solved bugs
+
   - When displaying the form on the booking page, the user could choose under which name to make a booking. So the form was displaying all the existing users in a dropdown option. Instead of just the authenticated user.
   I solved this by 
   ```
@@ -94,30 +141,44 @@ Wireframe
       booking.save()
       return redirect('overview')
   ```
+  - When deploying to Heroku, all my images didn't load. I figured out this was because it is asking for another image.url than given. 
+  In Cloudinary the style.css file is up to date, but when deploying to Heroku I would get an error about the collectstatic. I solved the error by linking my stylesheet with the direct Cloudinary url instead of a file path and then deploying with the config var: DISABLE_COLLECTSTATIC = 1.
 
 ### Unsolved bugs
+
 - When deploying to heroku, my css file doesn't load.
-- When deploying to heroku, all my images didn't load. I figure out this was because it is asking for another image.url than given. In Cloudinary the style.css file is up to date, but somehow I cannot manage to deploy this with Heroku. 
-- A user can now still make bookings in the past
+- A user can now still make bookings in the past.
+- When the user is not logged in and tries to make a booking, an server error occurs. This is because the hidden forms cannot be generated if the user is not authenticated.
 
 
 
-libraries
-technologies
-deployment
+## Libraries & Technologies
+---
+- Django DateTime
+- Django Allauth
+- Summernote
+- Gunicorn
+- Bootstrap
+- Cloudinary
+- Heroku
+- Django Messages
+
+## Deployment
+---
 
 ## Credits
+---
+
 - [Medium](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) - for reminding me of the markdown codes
 - [Google Translate](https://translate.google.com) - for helping me translate from Dutch to English
-- [Stackoverflow]
-- [w3schools]
-- [GeeksForGeeks]
+- [GeeksForGeeks](https://geeksforgeeks.org) - for helping me understand Django Models
 - [Pexels](https://pexels.com) - for the images 
 - [Flexbox Froggy](https://flexboxfroggy.com/) - to help me postition divs
 
 
  ### Acknowledgments
+
  - My mentor Daisy for guiding me
- - Tutor support for helping me solve bugs mentioned above
+ - Tutor support for helping me solve the bugs mentioned above
  - Code Institute 
  
