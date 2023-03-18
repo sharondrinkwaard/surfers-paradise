@@ -1,76 +1,115 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
 <header>
     <div class="index-header">
         <div class="header-text">
             <h1 class="mt-5">Surfers Paradise, Australia</h1>
+            <h2>Learn to surf with us!</h2>
             <p class="mt-3"><a href="{% url 'booking' %}" class="btn btn-secondary btn-lg">Book your lesson!</a></p>
         </div>
     </div>
 </header>
 
 <section class="container">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-0">
+            <div class="">
+                <a href="{% url 'booking' %}">
+                   <img class="rounded-circle img-fluid" height="150px" src="https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066089/static/images/beginner-lesson.jpg" alt="Beginner surf lesson">
+                </a>
+                 </div>
+        </div>
+        <div class="col-md-8 float-right mt-4 mb-4">
+            <h2>Beginner Surf Lesson</h2>
+            <p>
+                Learn to surf at our Surfers Paradise surfschool.
+                Never surfed before and always wanted to give it a try? 
+                No problem! Join us for a beginner surf lesson on the best beach in Queensland. 
+
+                A bucket list must for every visit to Queensland no matter what age, ability or experience. 
+                Get those essential surf skills down before hitting the waves by yourself.
+
+                Our priority is delivering fun, professional surf lessons to get you catching waves, up and surfing with good technique, confidence and style. 
+
+                Our International Surf Association/ Surf Australia and Lifeguard qualified surf instructors will guide you through the basics using surf theory and in water practice to help you kick start your surfing journey.
+            </p>
+        </div>
     </div>
-    <div class="row col-md-8 float-right mt-4 mb-4">
-        <h1>Beginner Surf lessons</h1>
-        <p>
-            Learn to surf at our Surfers Paradise surfschool.
-            Never surfed before and always wanted to give it a try? 
-            No problem! Join us for a beginner surf lesson on the best beach in Queensland. 
+    
+    <div class="row">
+        <div class="col-md-8 mt-4 mb-4">
+            <h2>Kids Camp</h2>
+            <p>
+                The Narosa kids surf camp is a great way to get your young ones into surfing and building confidence in the ocean. 
+                They'll be taught by enthusiastic and very experienced surf coaches and by the end of the week they'll be up and riding on their surfboards with tricks and turns to impress. Next stop: Pro Surfing!
+                
+                Children learn to handle the surfboards, paddling technique, catching waves and correct surf stance. 
+                They work through a structured programme of surf levels so they know how to progress and feel a sense of achievement as they do.
+            </p>
+        </div>
+        <div class="col-md-4 col-lg-4 float-right">
+            <div>
+                <a href="{% url 'booking' %}">
+                    <img class="rounded-circle img-fluid" height="150px" src="https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066093/static/images/kids-camp.jpg" alt="Kids Camp">
+                </a>
+            </div>
+        </div>
+    </div>   
 
-            A bucket list must for every visit to Queensland no matter what age, ability or experience. 
-            Get those essential surf skills down before hitting the waves by yourself.
+    <div class="row">
+        <div class="col-md-4 col-lg-4">
+            <div>
+                <a href="{% url 'booking' %}">
+                    <img class="rounded-circle img-fluid" height="150px" src="https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066090/static/images/intermediate-lesson.jpg" alt="Intermediate surf lesson">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-8 float-right mt-4 mb-4">
+            <h2>Intermediate Surf Lesson</h2>
+            <p>
+                Our intermediate and advanced coaching is open to all, including both recreational and competitive surfers, looking to improve their surfing technique. 
+                We offer a variety of courses from intensive 1/2 day sessions, through to weeklong courses.
 
-            Our priority is delivering fun, professional surf lessons to get you catching waves, up and surfing with good technique, confidence and style. 
-
-            Our International Surf Association/ Surf Australia and Lifeguard qualified surf instructors will guide you through the basics using surf theory and in water practice to help you kick start your surfing journey.
-        </p>
+                Because we select our coaching team based on their surfing experience, as well as their coaching skills, all our coaching staff teach the intermediate level lessons, including private and group lessons.
+                We have a large selection of surf boards available to give our clients the opportunity to try different equipment suited to their level and the surf conditions.
+            </p>
+        </div>
     </div>
-    <div class="row col-md-8 mt-4 mb-4">
-        <h2>Kids Camp</h2>
-        <p>
-            The Narosa kids surf camp is a great way to get your young ones into surfing and building confidence in the ocean. 
-            They'll be taught by enthusiastic and very experienced surf coaches and by the end of the week they'll be up and riding on their surfboards with tricks and turns to impress. Next stop: Pro Surfing!
-            
-            Children learn to handle the surfboards, paddling technique, catching waves and correct surf stance. 
-            They work through a structured programme of surf levels so they know how to progress and feel a sense of achievement as they do.
-        </p>
-    </div>
-    <div class="row col-md-8 float-right mt-4 mb-4">
-        <h2>Intermediate Surf Lesson</h2>
-        <p>
-            Our intermediate and advanced coaching is open to all, including both recreational and competitive surfers, looking to improve their surfing technique. 
-            We offer a variety of courses from intensive 1/2 day sessions, through to weeklong courses.
 
-            Because we select our coaching team based on their surfing experience, as well as their coaching skills, all our coaching staff teach the intermediate level lessons, including private and group lessons.
-            We have a large selection of surf boards available to give our clients the opportunity to try different equipment suited to their level and the surf conditions.
-        </p>
-    </div>
-    <div class="row col-md-8 mt-4 mb-4">
-        <h2>Surf Coaching</h2>
-        <p>
-            Coaching with video analysis is a very useful tool for surfing performance; observing your technique and receiving feedback is vital for identifying and correcting problems, and ironing out issues with technique.
-            It is especially helpful for intermediate surfers who are catching unbroken waves, but struggling to consistently make take-offs and perform basic manoeuvres on the wave face. If you are serious about improving your surfing, video analysis is an excellent tool to enable you to progress.
-            Our surf coaching covers all levels from complete beginners, through intermediate to advanced and technical surf coaching.
+    <div class="row">
+        <div class="col-md-8 mt-4 mb-4">
+            <h2>Surf Coaching</h2>
+            <p>
+                Coaching with video analysis is a very useful tool for surfing performance; observing your technique and receiving feedback is vital for identifying and correcting problems, and ironing out issues with technique.
+                It is especially helpful for intermediate surfers who are catching unbroken waves, but struggling to consistently make take-offs and perform basic manoeuvres on the wave face. If you are serious about improving your surfing, video analysis is an excellent tool to enable you to progress.
+                Our surf coaching covers all levels from complete beginners, through intermediate to advanced and technical surf coaching.
 
-            We are the only Queensland Surf School to offer regular outback lessons, where we teach our clients, the more technical aspects of intermediate and advanced levels surfing. 
-            This includes:
+                We are the only Queensland Surf School to offer regular outback lessons, where we teach our clients, the more technical aspects of intermediate and advanced levels surfing. 
+                This includes:
 
-            - Paddling and paddle strength
-            - Positioning in the ocean to catch the best part of the wave
-            - Turning left and right
-            - Trimming the board for longer rides
-            - Reading the ocean for wave awareness
-            - Speed and manoeuvrability
-            - Technical advanced moves, like bottom and top turn
-        </p>
+                - Paddling and paddle strength
+                - Positioning in the ocean to catch the best part of the wave
+                - Turning left and right
+                - Trimming the board for longer rides
+                - Reading the ocean for wave awareness
+                - Speed and manoeuvrability
+                - Technical advanced moves, like bottom and top turn
+            </p>
+        </div>
+        <div class="col-md-4 col-lg-4 float-right">
+            <div>
+                <a href="{% url 'booking' %}">
+                    <img class="rounded-circle img-fluid" height="150px" src="https://res.cloudinary.com/dczvqyqtp/image/upload/v1669066094/static/images/surf-coaching.jpg" alt="Surf coaching">
+                </a>
+            </div>
+        </div>
     </div>
+
     <div class="row align-items-center col-md-4 mb-5">
         <h2><a href="{% url 'booking' %}" class="btn btn-secondary btn-lg">Book your lesson here!</a></h2>
     </div>
-
 </section>
 
 {% endblock %}

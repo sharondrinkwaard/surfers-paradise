@@ -1,24 +1,20 @@
-  # NOTE: 
-I would like to inform you that this is my 4th portfolio project.
-I havent fully finished this project yet. Unfortunately due to circumstances I am not able to deliver this project, finished, on the scheduled time. I submitted it knowing I would probably not get a passing grade, I will continue this project whenever I can.
-Thank you for understanding!
 
-HERE COMES A MOCKUP PICTURE
 
 # Introduction
 
 Surfers Paradise, a surfschool located in Queensland, Australia. A warm climate, beautiful nature and the best waves.
 
+Everyone who has ever wanted to try surfing, don't wait any longer! Take a look at this project and book your first surfing lesson. 
+
 My goal for this project is to make it very easy for all users and visitors to make a booking for a surf lesson of choice. Being able to keep track of all bookings when logged in, update them if needed, or even to delete a booking.
 
 Also that all necessary information is provided, like all contact information, what is included in a lesson and what times the lessons are everyday.
 
+View my repository <strong>[here](https://github.com/sharondrinkwaard/surfers-paradise)</strong>
 
+View the live application <strong>[here](https://surfers-paradise.herokuapp.com/)</strong>
 
-
-View my repository [here](https://github.com/sharondrinkwaard/surfers-paradise)
-
-View the live application [here](https://surfers-paradise.herokuapp.com/)
+HERE COMES A MOCKUP PICTURE
 
 ## Features
 ---
@@ -114,13 +110,41 @@ When starting to set up the models.py, I created an Entity Relationship Diagram 
 ## Testing
 ---
 
- - validator testing
-    - html
-    - js
-    - css
-    - python
+### User Stories
+- Link to kanban board?
+- Screenshot
 
-  - lighthouse screenshot
+### Validators
+No errors returned when passing through the HTML validator.
+SCREENSHOT
+
+No errors returned when passing through the JS validator
+SCREENSHOT
+
+No errors returned when passing through the CSS validator
+SCREENSHOT
+
+No errors returned when passing through the Python validator
+SCREENSHOT
+
+Below you can find the Lighthouse report.
+SCREENSHOT
+
+### Manual Testing
+- I tested it the project works well in Chrome and Microsoft Edge.
+
+- I tested if all buttons work and direct to the correct page.
+I can confirm that they all work correctly. I tested this by clicking on all buttons.
+
+- I tested if all hovers work correctly. I confirm that they indeed do.
+
+- I confirm that this design is responsive, functions well and looks good on all standard media devices. I tested this by using DevTools in the Chrome browser. 
+
+- I confirm that there are no errors or bugs in the console while using devtools in the browswer. I tested this by opening and refreshing the websiste several times while keeping DevTools open.
+
+- I tested if all images are being displayed correctly from Cloudinary. Previously the images were not loading. Now they do and I confirm that they indeed are all being displayed. I tested this by loading every page several times to see if the images are being displayed. 
+
+- I confirm that all user stories are implemented and are fullfilled. 
 
 ## Bugs
 ---
@@ -165,6 +189,23 @@ When starting to set up the models.py, I created an Entity Relationship Diagram 
 
 ## Deployment
 ---
+1. Log in to Heroku or create an account.
+2. Then, click the button labelled New from the dashboard in the top right corner and from the drop-down menu select Create New App. You must enter a unique app name.
+3. Next, select your region.
+4. Click on the Create App button.
+5. The next page you will see is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars.
+6. Click Reveal Config Vars and enter PORT into the Key box and 8000 into the Value box and click the Add button.
+7. Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes.
+8. The Buildpacks must be in the correct order. If not, click and drag them to move into the correct order.
+9. Scroll to the top of the page and now choose the Deploy tab.
+10. Select Github as the deployment method.
+11. Confirm you want to connect to GitHub.
+12. Search for the repository name and click the connect button.
+13. Scroll to the bottom of the deploy page and select preferred deployment type:
+- Click either <strong>Enable Automatic Deploys</strong> for automatic deployment when you push updates to Github.
+
+- Select the correct branch for deployment from the drop-down menu and click <strong>Deploy Branch</strong> for manual deployment.
+
 
 ## Credits
 ---

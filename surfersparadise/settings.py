@@ -17,6 +17,9 @@ from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+}
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
