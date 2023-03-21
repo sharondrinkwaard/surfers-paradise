@@ -14,7 +14,7 @@ View my repository <strong>[here](https://github.com/sharondrinkwaard/surfers-pa
 
 View the live application <strong>[here](https://surfers-paradise.herokuapp.com/)</strong>
 
-HERE COMES A MOCKUP PICTURE
+![Mockup Screenshot](/static/images/mockup.png)
 
 ## Features
 ---
@@ -110,41 +110,42 @@ When starting to set up the models.py, I created an Entity Relationship Diagram 
 ## Testing
 ---
 
-### User Stories
-- Link to kanban board?
-- Screenshot
-
 ### Validators
-No errors returned when passing through the HTML validator.
-SCREENSHOT
+- No errors returned when passing through the <strong>[HTML Validator](https://validator.w3.org/nu/)</strong>.
 
-No errors returned when passing through the JS validator
-SCREENSHOT
+- No errors returned when passing through the <strong>[CSS validator](https://jigsaw.w3.org/css-validator/)</strong>
 
-No errors returned when passing through the CSS validator
-SCREENSHOT
+- No errors but some warnings returned when passing through the <strong>[Python validator](https://extendsclass.com/python-tester.html)</strong>
+As PEP8 Online is not available anymore (at least in my country) I chose this other python validator. 
+The warnings it sometimes returned were not errors but simply the use of another style guide.
 
-No errors returned when passing through the Python validator
-SCREENSHOT
+- Below you can find the Lighthouse report.
+  ![Lighthouse report](/static/images/lighthouse.png)
 
-Below you can find the Lighthouse report.
-SCREENSHOT
 
-### Manual Testing
-- I tested it the project works well in Chrome and Microsoft Edge.
+### Manual Testing - Python & JavaScript
 
-- I tested if all buttons work and direct to the correct page.
-I can confirm that they all work correctly. I tested this by clicking on all buttons.
+- I tested it the project displays well in Chrome and Microsoft Edge.
 
 - I tested if all hovers work correctly. I confirm that they indeed do.
 
 - I confirm that this design is responsive, functions well and looks good on all standard media devices. I tested this by using DevTools in the Chrome browser. 
 
-- I confirm that there are no errors or bugs in the console while using devtools in the browswer. I tested this by opening and refreshing the websiste several times while keeping DevTools open.
+- I confirm that there are no errors or bugs in the console while using DevTools in the browswer. I tested this by opening and refreshing the websiste several times while keeping DevTools open.
 
 - I tested if all images are being displayed correctly from Cloudinary. Previously the images were not loading. Now they do and I confirm that they indeed are all being displayed. I tested this by loading every page several times to see if the images are being displayed. 
 
+- I confirm that the messages/alerts (JavaScript)
+ are working. I tested this by logging in and out several times. Each time a messages was being displayed at the top of the page. I also checked that the message would dissappear on it's own.
 - I confirm that all user stories are implemented and are fullfilled. 
+
+Below I placed my testing sheet where all tests I have done are mentioned and the results are being displayed.
+
+![Testing sheet](/static/images/testing_sheet_1.png)
+![Testing sheet](/static/images/testing_sheet_2.png)
+![Testing sheet](/static/images/testing_sheet_3.png)
+
+
 
 ## Bugs
 ---
