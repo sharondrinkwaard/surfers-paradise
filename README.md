@@ -117,7 +117,7 @@ When starting to set up the models.py, I created an Entity Relationship Diagram 
 
 - No errors but some warnings returned when passing through the <strong>[Python validator](https://extendsclass.com/python-tester.html)</strong>
 As PEP8 Online is not available anymore (at least in my country) I chose this other python validator. 
-The warnings it sometimes returned were not errors but simply the use of another style guide.
+The warnings it sometimes returned were not errors but simply the use of another style guide. I decided to stick to the PEP8, because I prefer this style and ignore the warnings.
 
 - Below you can find the Lighthouse report.
   ![Lighthouse report](/static/images/lighthouse.png)
@@ -127,9 +127,9 @@ The warnings it sometimes returned were not errors but simply the use of another
 
 - I tested it the project displays well in Chrome and Microsoft Edge.
 
-- I tested if all hovers work correctly. I confirm that they indeed do.
+- I tested if all hovers work correctly. I confirm that they indeed do by hovering over all of them.
 
-- I confirm that this design is responsive, functions well and looks good on all standard media devices. I tested this by using DevTools in the Chrome browser. 
+- I confirm that this design is responsive, functions well and looks good on all standard media devices, desktop, tablet and mobile phone. I tested this by using DevTools in the Chrome browser. 
 
 - I confirm that there are no errors or bugs in the console while using DevTools in the browswer. I tested this by opening and refreshing the websiste several times while keeping DevTools open.
 
