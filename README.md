@@ -147,6 +147,12 @@ Below I placed my testing sheet where all tests I have done are mentioned and th
 ![Testing sheet](/static/images/test_sheet3.png)
 
 
+One error occurred as mentioned above in the models.py file.
+Below I added a screenshot of the error.
+And like mentioned in notes, I decided not to change anything as everything is working as expected. 
+
+![Error](/static/images/syntax_error.png)
+
 
 ## Bugs
 ---
