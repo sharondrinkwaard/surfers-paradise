@@ -120,6 +120,7 @@ As PEP8 Online is not available anymore (at least in my country) I chose this ot
 The warnings it sometimes returned were not errors but simply the use of another style guide. I decided to stick to the PEP8, because I prefer this style and ignore the warnings.
 
 - Below you can find the Lighthouse report.
+
   ![Lighthouse report](/static/images/lighthouse.png)
 
 
@@ -141,9 +142,9 @@ The warnings it sometimes returned were not errors but simply the use of another
 
 Below I placed my testing sheet where all tests I have done are mentioned and the results are being displayed.
 
-![Testing sheet](/static/images/testing_sheet_1.png)
-![Testing sheet](/static/images/testing_sheet_2.png)
-![Testing sheet](/static/images/testing_sheet_3.png)
+![Testing sheet](/static/images/test_sheet1.png)
+![Testing sheet](/static/images/test_sheet2.png)
+![Testing sheet](/static/images/test_sheet3.png)
 
 
 
@@ -170,8 +171,6 @@ Below I placed my testing sheet where all tests I have done are mentioned and th
   In Cloudinary the style.css file is up to date, but when deploying to Heroku I would get an error about the collectstatic. I solved the error by linking my stylesheet with the direct Cloudinary url instead of a file path and then deploying with the config var: DISABLE_COLLECTSTATIC = 1.
 
 ### Unsolved bugs
-
-- When deploying to heroku, my css file doesn't load.
 - A user can now still make bookings in the past.
 - When the user is not logged in and tries to make a booking, an server error occurs. This is because the hidden forms cannot be generated if the user is not authenticated.
 
@@ -206,6 +205,7 @@ Below I placed my testing sheet where all tests I have done are mentioned and th
 - Click either <strong>Enable Automatic Deploys</strong> for automatic deployment when you push updates to Github.
 
 - Select the correct branch for deployment from the drop-down menu and click <strong>Deploy Branch</strong> for manual deployment.
+14. Wait for the deployment to be finished and then view your site.
 
 
 ## Credits
