@@ -142,7 +142,7 @@ The warnings it sometimes returned were not errors but simply the use of another
 
 Below I placed my testing sheet where all tests I have done are mentioned and the results are being displayed.
 
-![Testing sheet](/static/images/test_sheet1.png)
+![Testing sheet](/static/images/test_sheet1_correct.png)
 ![Testing sheet](/static/images/test_sheet2.png)
 ![Testing sheet](/static/images/test_sheet3.png)
 
